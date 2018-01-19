@@ -32,23 +32,25 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.IpBazyTextBox = new System.Windows.Forms.TextBox();
-            this.NazwaBazyTextBox = new System.Windows.Forms.TextBox();
-            this.LoginTextBox = new System.Windows.Forms.TextBox();
-            this.HasłoTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.hasłoTextBox = new System.Windows.Forms.TextBox();
+            this.loginTextBox = new System.Windows.Forms.TextBox();
+            this.nazwaBazyTextBox = new System.Windows.Forms.TextBox();
+            this.IpBazyTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.queryTextBox3 = new System.Windows.Forms.TextBox();
+            this.queryTextBox2 = new System.Windows.Forms.TextBox();
+            this.queryTextBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Tabela1 = new System.Windows.Forms.TabPage();
             this.Tabela2 = new System.Windows.Forms.TabPage();
             this.Tabela3 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -90,76 +92,22 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.HasłoTextBox);
-            this.groupBox1.Controls.Add(this.LoginTextBox);
-            this.groupBox1.Controls.Add(this.NazwaBazyTextBox);
+            this.groupBox1.Controls.Add(this.hasłoTextBox);
+            this.groupBox1.Controls.Add(this.loginTextBox);
+            this.groupBox1.Controls.Add(this.nazwaBazyTextBox);
             this.groupBox1.Controls.Add(this.IpBazyTextBox);
             this.groupBox1.Location = new System.Drawing.Point(31, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(744, 78);
+            this.groupBox1.Size = new System.Drawing.Size(744, 133);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            // 
-            // IpBazyTextBox
-            // 
-            this.IpBazyTextBox.Location = new System.Drawing.Point(46, 35);
-            this.IpBazyTextBox.Name = "IpBazyTextBox";
-            this.IpBazyTextBox.Size = new System.Drawing.Size(100, 20);
-            this.IpBazyTextBox.TabIndex = 0;
-            // 
-            // NazwaBazyTextBox
-            // 
-            this.NazwaBazyTextBox.Location = new System.Drawing.Point(172, 35);
-            this.NazwaBazyTextBox.Name = "NazwaBazyTextBox";
-            this.NazwaBazyTextBox.Size = new System.Drawing.Size(100, 20);
-            this.NazwaBazyTextBox.TabIndex = 1;
-            // 
-            // LoginTextBox
-            // 
-            this.LoginTextBox.Location = new System.Drawing.Point(306, 35);
-            this.LoginTextBox.Name = "LoginTextBox";
-            this.LoginTextBox.Size = new System.Drawing.Size(100, 20);
-            this.LoginTextBox.TabIndex = 2;
-            // 
-            // HasłoTextBox
-            // 
-            this.HasłoTextBox.Location = new System.Drawing.Point(446, 35);
-            this.HasłoTextBox.Name = "HasłoTextBox";
-            this.HasłoTextBox.PasswordChar = '*';
-            this.HasłoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.HasłoTextBox.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(75, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "IP Bazy";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(189, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Nazwa Bazy";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(341, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Login";
             // 
             // label4
             // 
@@ -170,46 +118,107 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Hasło";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(341, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Login";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(189, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Nazwa Bazy";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(75, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "IP Bazy";
+            // 
+            // hasłoTextBox
+            // 
+            this.hasłoTextBox.Location = new System.Drawing.Point(446, 35);
+            this.hasłoTextBox.Name = "hasłoTextBox";
+            this.hasłoTextBox.PasswordChar = '*';
+            this.hasłoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.hasłoTextBox.TabIndex = 3;
+            // 
+            // loginTextBox
+            // 
+            this.loginTextBox.Location = new System.Drawing.Point(306, 35);
+            this.loginTextBox.Name = "loginTextBox";
+            this.loginTextBox.Size = new System.Drawing.Size(100, 20);
+            this.loginTextBox.TabIndex = 2;
+            this.loginTextBox.Text = "root";
+            // 
+            // nazwaBazyTextBox
+            // 
+            this.nazwaBazyTextBox.Location = new System.Drawing.Point(172, 35);
+            this.nazwaBazyTextBox.Name = "nazwaBazyTextBox";
+            this.nazwaBazyTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nazwaBazyTextBox.TabIndex = 1;
+            this.nazwaBazyTextBox.Text = "mysql";
+            // 
+            // IpBazyTextBox
+            // 
+            this.IpBazyTextBox.Location = new System.Drawing.Point(46, 35);
+            this.IpBazyTextBox.Name = "IpBazyTextBox";
+            this.IpBazyTextBox.Size = new System.Drawing.Size(100, 20);
+            this.IpBazyTextBox.TabIndex = 0;
+            this.IpBazyTextBox.Text = "127.0.0.1";
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Location = new System.Drawing.Point(32, 100);
+            this.groupBox2.Controls.Add(this.queryTextBox3);
+            this.groupBox2.Controls.Add(this.queryTextBox2);
+            this.groupBox2.Controls.Add(this.queryTextBox1);
+            this.groupBox2.Location = new System.Drawing.Point(31, 151);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(742, 130);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Zapytania";
             // 
-            // textBox2
+            // queryTextBox3
             // 
-            this.textBox2.Location = new System.Drawing.Point(26, 33);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(699, 20);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "SELECT * FROM db";
+            this.queryTextBox3.Location = new System.Drawing.Point(26, 85);
+            this.queryTextBox3.Name = "queryTextBox3";
+            this.queryTextBox3.Size = new System.Drawing.Size(699, 20);
+            this.queryTextBox3.TabIndex = 3;
+            this.queryTextBox3.Text = "SELECT * FROM columns_priv";
             // 
-            // textBox1
+            // queryTextBox2
             // 
-            this.textBox1.Location = new System.Drawing.Point(26, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(699, 20);
-            this.textBox1.TabIndex = 2;
+            this.queryTextBox2.Location = new System.Drawing.Point(26, 59);
+            this.queryTextBox2.Name = "queryTextBox2";
+            this.queryTextBox2.Size = new System.Drawing.Size(699, 20);
+            this.queryTextBox2.TabIndex = 2;
+            this.queryTextBox2.Text = "SELECT * FROM user";
             // 
-            // textBox3
+            // queryTextBox1
             // 
-            this.textBox3.Location = new System.Drawing.Point(26, 85);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(699, 20);
-            this.textBox3.TabIndex = 3;
+            this.queryTextBox1.Location = new System.Drawing.Point(26, 33);
+            this.queryTextBox1.Name = "queryTextBox1";
+            this.queryTextBox1.Size = new System.Drawing.Size(699, 20);
+            this.queryTextBox1.TabIndex = 1;
+            this.queryTextBox1.Text = "SELECT * FROM db";
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.Tabela1);
             this.tabControl1.Controls.Add(this.Tabela2);
             this.tabControl1.Controls.Add(this.Tabela3);
-            this.tabControl1.Location = new System.Drawing.Point(31, 236);
+            this.tabControl1.Location = new System.Drawing.Point(30, 287);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(744, 406);
@@ -256,6 +265,23 @@
             this.dataGridView3.Size = new System.Drawing.Size(736, 380);
             this.dataGridView3.TabIndex = 2;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(218, 93);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(328, 20);
+            this.textBox1.TabIndex = 8;
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(109, 96);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(92, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Gdzie zapisać plik";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,19 +317,21 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox HasłoTextBox;
-        private System.Windows.Forms.TextBox LoginTextBox;
-        private System.Windows.Forms.TextBox NazwaBazyTextBox;
+        private System.Windows.Forms.TextBox hasłoTextBox;
+        private System.Windows.Forms.TextBox loginTextBox;
+        private System.Windows.Forms.TextBox nazwaBazyTextBox;
         private System.Windows.Forms.TextBox IpBazyTextBox;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox queryTextBox3;
+        private System.Windows.Forms.TextBox queryTextBox2;
+        private System.Windows.Forms.TextBox queryTextBox1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage Tabela1;
         private System.Windows.Forms.TabPage Tabela2;
         private System.Windows.Forms.TabPage Tabela3;
         private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
     }
 }
 
